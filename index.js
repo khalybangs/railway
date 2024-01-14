@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 
 // connection
 
-app.listen(/*process.env.PORT*/8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log('Connected successfully! app listening on port 2020');
 })
 
